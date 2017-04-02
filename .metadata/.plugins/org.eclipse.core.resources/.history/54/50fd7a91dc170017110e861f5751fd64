@@ -12,7 +12,6 @@ class Send_Processor(Thread):
     
     def __init__(self,send_Q=Queue(0)):
         self.send_Q=send_Q
-        Thread.__init__(self)
     
     
     def run(self,):

@@ -20,7 +20,6 @@ class Sender_Thread(Thread):
         self.sender_switch="True"
         self.send_socket=send_socket
         self.tosend=tosend
-        Thread.__init__(self)
         
     def run(self):
         pass

@@ -12,7 +12,6 @@ class Received_Processor(Thread):
     def __init__(self, received_Q=Queue(0),con_type="client"):
         self.received_Q=received_Q
         self.con_type=con_type
-        Thread.__init__(self)
         
     
     

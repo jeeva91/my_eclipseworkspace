@@ -20,7 +20,6 @@ class Receiver_Thread(Thread):
         self.receiver_switch="True"
         self.received=received
         self.rcv_socket=rcv_socket
-        Thread.__init__(self)
         
     def run(self):
         pass
