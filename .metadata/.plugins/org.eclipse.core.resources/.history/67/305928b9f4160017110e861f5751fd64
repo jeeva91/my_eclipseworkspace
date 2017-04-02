@@ -1,0 +1,17 @@
+'''
+Created on Apr 1, 2017
+
+@author: jee11
+'''
+import socket
+class My_TCP(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        

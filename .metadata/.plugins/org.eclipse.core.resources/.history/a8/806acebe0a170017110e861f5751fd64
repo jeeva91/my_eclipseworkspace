@@ -1,0 +1,29 @@
+'''
+Created on Apr 1, 2017
+
+@author: jee11
+'''
+import threading.Thread
+from queue import Queue
+from _overlapped import NULL
+from _socket import socket
+class Sender_Thread(threading.Thread):
+    '''
+    classdocs
+    '''
+    
+
+    def __init__(self):
+        '''
+        Constructor
+        '''
+        self.sender_switch="True"
+        
+    def run(self,tosend=Queue(0),socket):
+        while(self.sender_swith=="True"):
+            pass
+            for all in Queue
+        
+        
+        
+        

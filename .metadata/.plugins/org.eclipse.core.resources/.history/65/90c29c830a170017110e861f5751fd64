@@ -1,0 +1,13 @@
+'''
+Created on Apr 1, 2017
+
+to test My_TCP, Sender_Thread, Receiver_thread
+
+@author: jee11
+'''
+import queue.Queue
+import socket
+
+import jeeva.hello.My_TCP
+import jeeva.hello.Receiver_Thread
+

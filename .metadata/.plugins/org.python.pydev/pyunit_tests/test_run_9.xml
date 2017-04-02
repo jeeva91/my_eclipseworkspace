@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 9" tests="0" total_time="Finished in: 0.00 secs."/>
+<test location="C:\Users\jee11\workspace\hello\jeeva\hello\TextPadClass.py" status="error" test="TextPadClass" time="0">
+<stdout/>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "C:\Users\jee11\Documents\eclipse\plugins\org.python.pydev_5.5.0.201701191708\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:/Users/jee11/workspace/hello/jeeva/hello\TextPadClass.py", line 7, in <module>
+    import Tkinter as tk
+ModuleNotFoundError: No module named 'Tkinter'
+ERROR: Module: TextPadClass could not be imported (file: C:\Users\jee11\workspace\hello\jeeva\hello\TextPadClass.py).
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="hello TextPadClass.py (1)"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

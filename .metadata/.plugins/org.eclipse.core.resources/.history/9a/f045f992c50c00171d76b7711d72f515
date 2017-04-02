@@ -1,0 +1,12 @@
+'''
+Created on Mar 19, 2017
+
+@author: jee11
+'''
+import PyCRC.CRC16
+
+my_crc=PyCRC.CRC16
+print(my_crc.calculate(1))
+
+if __name__ == '__main__':
+    pass

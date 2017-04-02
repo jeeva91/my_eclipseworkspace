@@ -1,0 +1,31 @@
+'''
+Created on Apr 1, 2017
+
+@author: jee11
+'''
+import socket
+class My_TCP():
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, ip="127.0.0.1", port=5005,type="client"):
+        '''
+        Constructor
+        '''
+        if type=="client":
+            self.my_socket=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.my_socket.connect(ip,port)
+        elif type=="server"
+            self.my_socket=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.my_socket.listen()
+            self.my_socket.accept()
+        
+    @staticmethod
+    def socket_getter(self, ip="127.0.0.1",port=5005,type="client"):
+        my_socket=My_TCP(ip,port,type)
+        return my_socket
+    
+    
+    

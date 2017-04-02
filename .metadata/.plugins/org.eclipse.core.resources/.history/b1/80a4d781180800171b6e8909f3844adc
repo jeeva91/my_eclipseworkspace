@@ -1,0 +1,26 @@
+'''
+Created on Mar 8, 2017
+
+@author: jee11
+'''
+import serial
+import unicodedata
+myserial = serial.Serial()
+myserial.baudrate=2400
+myserial.port='COM1'
+print("cheking if the connection is open")
+print(myserial.isOpen())
+print("trying to open port")
+myserial.open()
+print("cheking if the connection is open")
+print(myserial.isOpen())
+print(myserial)
+
+if __name__ == '__main__':
+    pass
+    while(1):        
+        print(myserial.read())  
+        #data=myserial.read())
+        #print(data)
+       # print(type(data))
+  

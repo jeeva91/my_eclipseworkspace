@@ -1,0 +1,15 @@
+MODULES_MANAGER_V2
+MySerial|C:\Users\jee11\workspace\hello\MySerial.py
+jeeva.crc_trial|C:\Users\jee11\workspace\hello\jeeva\crc_trial.py
+jeeva.hello.CRCCCITT|C:\Users\jee11\workspace\hello\jeeva\hello\CRCCCITT.py
+jeeva.hello.Consumer_Thread|C:\Users\jee11\workspace\hello\jeeva\hello\Consumer_Thread.py
+jeeva.hello.My_TCP|C:\Users\jee11\workspace\hello\jeeva\hello\My_TCP.py
+jeeva.hello.Producer_Thread|C:\Users\jee11\workspace\hello\jeeva\hello\Producer_Thread.py
+jeeva.hello.Received_Processor|C:\Users\jee11\workspace\hello\jeeva\hello\Received_Processor.py
+jeeva.hello.Receiver_Thread|C:\Users\jee11\workspace\hello\jeeva\hello\Receiver_Thread.py
+jeeva.hello.Send_Processor|C:\Users\jee11\workspace\hello\jeeva\hello\Send_Processor.py
+jeeva.hello.Sender_Thread|C:\Users\jee11\workspace\hello\jeeva\hello\Sender_Thread.py
+jeeva.hello.comm_tester|C:\Users\jee11\workspace\hello\jeeva\hello\comm_tester.py
+quest.__init__|C:\Users\jee11\workspace\hello\quest\__init__.py
+quest.hello.__init__|C:\Users\jee11\workspace\hello\quest\hello\__init__.py
+quest.hello.serialreadline|C:\Users\jee11\workspace\hello\quest\hello\serialreadline.py

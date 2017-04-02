@@ -1,0 +1,39 @@
+'''
+Created on Apr 1, 2017
+
+@author: jee11
+'''
+
+from threading import Thread
+from queue import Queue
+
+class Consumer_Thread(Thread):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, consume_Q=Queue(0)):
+        '''
+        Constructor
+        '''
+        Thread.__init__(self)
+        print("inside Consumer constructor")
+        self.consume_Q= consume_Q
+        
+    def run(self):
+        '''
+        '''
+        self.consume() 
+        
+    
+    
+    def consume(self):
+        while(True):
+            if(self.consume_Q.not_empty()):
+                data=self.consume_Q.get()
+                print("got {} from the queue".format(data))
+                
+        
+    
+    

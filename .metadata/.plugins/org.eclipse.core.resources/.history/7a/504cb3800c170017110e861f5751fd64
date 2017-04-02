@@ -1,0 +1,23 @@
+'''
+Created on Apr 1, 2017
+
+to test My_TCP, Sender_Thread, Receiver_thread
+
+@author: jee11
+'''
+import queue.Queue
+import socket
+
+#import hello.jeeva.hello.My_TCP.My_TCP
+#import jeeva.hello.Receiver_Thread.Receiver_Thread
+#import jeeva.hello.Sender_Thread.Sender_Thread
+
+from jeeva.hello import My_TCP.My_TCP
+
+server_queue=queue.Queue()
+receiver_queue=queue.Queue()
+
+server_socket=My_TCP.socket_getter(ip="127.0.0.1",port=5005,type="client")
+
+
+

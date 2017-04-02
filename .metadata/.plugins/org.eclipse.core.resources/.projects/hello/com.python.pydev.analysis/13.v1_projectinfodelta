@@ -1,0 +1,10 @@
+INSTUPjeeva.hello.comm_tester
+C:\Users\jee11\workspace\hello\jeeva\hello\comm_tester.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0
+ip=6
+server_receive=3
+client_send=4
+client_receive=5
+server_send=1
+server_thread=7
+jeeva.hello.comm_tester=2

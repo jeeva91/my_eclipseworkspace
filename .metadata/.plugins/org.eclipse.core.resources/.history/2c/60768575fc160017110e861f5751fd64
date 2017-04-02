@@ -1,0 +1,19 @@
+'''
+Created on Apr 1, 2017
+
+@author: jee11
+'''
+import threading.Thread
+class Sender_Thread(threading.Thread):
+    '''
+    classdocs
+    '''
+    
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        global Boolean sender_switch =True
+        
+        
