@@ -27,7 +27,7 @@ class Sender_Thread(Thread):
         self.send()
     
     def send(self):    
-        while(self.sender_switch=="True"):
+        while(self.sender_swith=="True"):
             pass
             if (~self.tosend.empty()):
                 self.send_socket.send(self.tosend.get())
