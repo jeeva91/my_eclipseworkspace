@@ -30,7 +30,7 @@ class Sender_Thread(Thread):
         while(self.sender_switch=="True"):
             pass
             if (~self.tosend.empty()):
-                self.send_socket.send(str(self.tosend.get())
+                self.send_socket.send(self.tosend.get())
                 
                 
             
