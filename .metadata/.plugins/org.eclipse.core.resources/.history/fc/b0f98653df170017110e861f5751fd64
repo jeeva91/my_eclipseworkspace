@@ -30,9 +30,7 @@ class Sender_Thread(Thread):
         while(self.sender_switch=="True"):
             pass
             if (~self.tosend.empty()):
-                data=self.tosend.get()
-                message=str(data)
-                self.send_socket.send(message.encode('utf-8'))
+                self.send_socket.send(self.tosend.get().encode('utf-8'))
                 
                 
             
