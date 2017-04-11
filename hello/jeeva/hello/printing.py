@@ -3,6 +3,7 @@ Created on Mar 29, 2017
 
 @author: jee11
 '''
+import re
 
 data="dog "+"\n"+"j"+"\n"+"fuck"
 print(data)
@@ -17,6 +18,13 @@ print(parti)
 print(first)
 print(next)
 
+
+my_string="how are you doing?"
+print("my_string with space")
+print(my_string)
+my_string=re.sub(r"\s+",'_',my_string)
+print("my_string space replaced with _")
+print(my_string)
 
 
 if __name__ == '__main__':

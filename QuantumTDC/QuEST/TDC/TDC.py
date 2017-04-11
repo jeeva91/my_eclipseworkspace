@@ -13,7 +13,7 @@ time_dict={"0":0}
 time_queue=Queue(0)
 time_counter=0
 
-tdc_serial=SerialReader(port='COM8',baudrate=38400)
+tdc_serial=SerialReader(port='COM10',baudrate=38400)
 
 def read_line(time_queue,tdc_serial,time_dict,time_counter):
     tdc_serial.start_TDC()
@@ -24,7 +24,7 @@ def read_line(time_queue,tdc_serial,time_dict,time_counter):
         print(data)        
         time_queue.put(data)
         time_counter=+1
-        if data>0:
+        if (int.from_bytes(data, byteorder='big',signed=False))>0:
             pass
             temp_dict={time_counter: data}
             time_dict.update(temp_dict)
