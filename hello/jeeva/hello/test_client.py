@@ -16,7 +16,7 @@ from jeeva.hello import Received_Processor
 client_send=Queue(0)
 client_receive=Queue(0)
 
-client_socket=My_TCP.My_TCP("155.246.109.143",5005,"client")
+client_socket=My_TCP.My_TCP("192.168.1.162",5005,"client")
 
 client_sender=Sender_Thread.Sender_Thread(client_send,client_socket.my_socket)
 client_receiver=Receiver_Thread.Receiver_Thread(client_receive,client_socket.my_socket)
