@@ -20,7 +20,7 @@ send_lock=Lock()
 client_receive=Queue(0)
 receive_lock=Lock()
 
-client_socket=My_TCP.My_TCP("192.168.1.162",5005,"client")
+client_socket=My_TCP.My_TCP("155.246.202.169",5005,"client")
 
 client_sender=Sender_Thread.Sender_Thread(client_send,client_socket.my_socket,lock=send_lock)
 client_receiver=Receiver_Thread.Receiver_Thread(client_receive,client_socket.my_socket,lock=receive_lock)
