@@ -27,8 +27,9 @@ class Send_Processor(Thread):
         while(True):
             self.lock.acquire()
             self.send_Q.put(counter)
+            self.lock.release()
             counter=counter+1
             time.sleep(0.5)
-            self.lock.release()
+            
             
     

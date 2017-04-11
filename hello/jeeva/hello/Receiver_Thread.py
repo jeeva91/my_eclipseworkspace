@@ -8,6 +8,7 @@ from threading import Lock
 from queue import Queue
 from _overlapped import NULL
 from _socket import socket
+import time
 class Receiver_Thread(Thread):
     '''
     classdocs
@@ -35,5 +36,6 @@ class Receiver_Thread(Thread):
             data=self.rcv_socket.recv(1024)
             self.received.put(data)
             self.lock.release()
+            time.sleep(0.25)
             
                 

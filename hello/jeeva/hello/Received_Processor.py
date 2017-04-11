@@ -7,6 +7,7 @@ Created on Apr 1, 2017
 from threading import Thread
 from queue import Queue
 from threading import Lock
+import time
 
 class Received_Processor(Thread):
     
@@ -30,3 +31,4 @@ class Received_Processor(Thread):
                 data=self.received_Q.get()
                 print("from{} data{}".format(self.con_type,data))
             self.lock.release()
+            time.sleep(0.25)
