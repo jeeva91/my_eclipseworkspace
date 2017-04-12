@@ -5,6 +5,7 @@ Created on Mar 15, 2017
 '''
 from tkinter import *
 from QuEST.TDC.SerialReader import SerialReader
+from QuEST.TDC.ReaderThread import ReaderThread
 from queue import Queue
 from threading import Thread
 import unicodedata
@@ -12,25 +13,28 @@ import unicodedata
 time_dict={"0":0}
 time_queue=Queue(0)
 time_counter=0
+reader_switch="True"
 
-tdc_serial=SerialReader(port='COM10',baudrate=38400)
+tdc_serial=SerialReader(port='COM3',baudrate=38400)
 
-def read_line(time_queue,tdc_serial,time_dict,time_counter):
-    tdc_serial.start_TDC()
-    while(1):
-        #print("inside reader")
+#def read_line(time_queue,tdc_serial,time_dict,time_counter):
+ #   tdc_serial.start_TDC()
+  #  while(1):
+   #     #print("inside reader")
+    #    
+     #   data=tdc_serial.read_line()
+      #  print(data)        
+       # time_queue.put(data)
+        #time_counter=+1
+        #if (int.from_bytes(data, byteorder='big',signed=False))>0:
+         #   pass
+          #  temp_dict={time_counter: data}
+           # time_dict.update(temp_dict)
         
-        data=tdc_serial.read_line()
-        print(data)        
-        time_queue.put(data)
-        time_counter=+1
-        if (int.from_bytes(data, byteorder='big',signed=False))>0:
-            pass
-            temp_dict={time_counter: data}
-            time_dict.update(temp_dict)
-        
-reader_thread=Thread(target=read_line,args=(time_queue,tdc_serial,time_dict,time_counter))
-reader_thread.setDaemon(True)
+#reader_thread=Thread(target=read_line,args=(time_queue,tdc_serial,time_dict,time_counter))
+#reader_thread.setDaemon(True)
+
+reader_thread=ReaderThread(time_queue,tdc_serial,reader_switch)
 
 root=Tk()
 root.title("QuEST TDC")
