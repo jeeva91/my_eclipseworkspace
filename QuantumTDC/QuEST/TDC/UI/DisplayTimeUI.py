@@ -5,6 +5,7 @@ Created on Mar 15, 2017
 '''
 from tkinter import *
 from QuEST.TDC.UI import UIWidgets
+from QuEST.TDC.UI import SettingsFrame
 
 class DisplayTimeUI(Tk):
     '''
@@ -17,8 +18,9 @@ class DisplayTimeUI(Tk):
         Constructor
         '''
         Tk.__init__(self)
-        port_label=UIWidgets.LabelFrame(self,label_text="Port No").grid(row=0,column=0)
-        if_server=UIWidgets.CheckBoxFrame(self,label_text="Server").grid(row=1,column=0,sticky=W)
+        self.title("QuEST Encryption tool")
+        setting_frame=SettingsFrame.SettingsFrame(self).pack(side=TOP)
+        
         
 my_display=DisplayTimeUI()
 my_display.mainloop(0)

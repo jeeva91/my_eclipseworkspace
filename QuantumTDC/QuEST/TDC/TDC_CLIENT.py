@@ -25,7 +25,7 @@ server_send=Queue(0)
 send_lock=Lock()
 server_receive=Queue(0)
 receive_lock=Lock()
-server_socket=My_TCP.My_TCP("155.246.109.84",5005,"server")
+server_socket=My_TCP.My_TCP("155.246.109.84",5005,"client")
 
 server_sender=Sender_Thread.Sender_Thread(server_send,server_socket.conn,lock=send_lock)
 server_receiver=Receiver_Thread.Receiver_Thread(server_receive,server_socket.conn,lock=receive_lock)
