@@ -1,0 +1,21 @@
+'''
+Created on Mar 15, 2017
+
+@author: jee11
+'''
+from tkinter import *
+
+class DisplayTimeUI(Tk):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self):
+        '''
+        Constructor
+        '''
+        Tk.__init__(self)
+        
+my_display=DisplayTimeUI()
+my_display.mainloop(0)

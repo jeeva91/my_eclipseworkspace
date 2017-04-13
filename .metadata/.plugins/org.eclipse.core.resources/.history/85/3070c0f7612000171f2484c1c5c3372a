@@ -1,0 +1,22 @@
+'''
+Created on Apr 13, 2017
+
+@author: jee11
+'''
+from tkinter import Frame, IntVar
+from tkinter import Label
+from tkinter import Entry
+from tkinter import *
+class LabelFrame(Frame):
+    def __init__(self,master,label_text="label"):
+        #Frame.__init__(self, master,width=350,height=70)
+        print(self.winfo_height())
+        print(self.winfo_width())
+        self.label=Label(self,text=label_text).pack(side=LEFT)
+        self.entry=Entry(self,width=10).pack(side=RIGHT)
+    def get_data(self):
+        return self.entry.get()
+    
+class CheckBoxFrame(Frame):
+    def __init__(self,master,label_text="server"):
+        Frame.__init__(self,master,width=350,height=70)

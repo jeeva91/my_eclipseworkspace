@@ -4,8 +4,9 @@ Created on Mar 15, 2017
 @author: jee11
 '''
 from tkinter import *
+from QuEST.TDC.UI import UIWidgets
 
-class DisplayTimeUI():
+class DisplayTimeUI(Tk):
     '''
     classdocs
     '''
@@ -15,8 +16,9 @@ class DisplayTimeUI():
         '''
         Constructor
         '''
-        self.display_window=Tk()
-        #self.display_window.
-        self.welcome_label=Label(self.display_window, text="Welcome").pack(side="left")
-        self.display_window.mainloop()
+        Tk.__init__(self)
+        port_label=UIWidgets.LabelFrame(self,label_text="Port No").grid(row=0,column=0)
+        if_server=UIWidgets.CheckBoxFrame(self,label_text="Server").grid(row=1,column=0,sticky=W)
         
+my_display=DisplayTimeUI()
+my_display.mainloop(0)

@@ -1,0 +1,11 @@
+'''
+Created on Apr 13, 2017
+
+@author: jee11
+'''
+from tkinter import Frame
+from tkinter import Label
+class LabelFrame(Frame):
+    def __init__(self,master,label_text="label"):
+        Frame.__init__(self, master,width=250,height=70)
+        self.label=Label(self,text=label_text,width=250,height=70).pack

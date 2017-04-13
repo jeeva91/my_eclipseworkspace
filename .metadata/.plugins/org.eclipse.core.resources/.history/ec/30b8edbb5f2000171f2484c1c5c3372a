@@ -1,0 +1,13 @@
+'''
+Created on Apr 13, 2017
+
+@author: jee11
+'''
+from tkinter import Frame, IntVar
+from tkinter import Label
+from tkinter.ttk import Entry
+class LabelFrame(Frame):
+    def __init__(self,master,label_text="label"):
+        Frame.__init__(self, master,width=350,height=70)
+        #self.label=Label(self,text=label_text,width=250,height=70).pack(side="left")
+        self.entry=Entry(self,IntVar=38400).pack(side="right")
