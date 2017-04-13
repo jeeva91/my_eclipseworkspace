@@ -16,11 +16,12 @@ class ReaderThread(Thread):
     '''
 
 
-    def __init__(self, time_queue, tdc_serial, reader_switch):
+    def __init__(self, time_queue, send_queue, tdc_serial, reader_switch):
         '''
         Constructor
         '''
         self.time_queue=time_queue
+        self.send_queue=send_queue
         #self.lock=Lock()
         self.tdc_serial=tdc_serial
         self.tdc_serial.start_TDC()
@@ -36,5 +37,9 @@ class ReaderThread(Thread):
             data=self.tdc_serial.read_line()
             print(data)
             self.time_queue.put(data)
+            self.send_queue.put(data)
+            
+    def stop_reading(self):
+        self.reader_switch="False"
             
             
