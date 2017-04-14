@@ -1,8 +1,16 @@
 MODULES_MANAGER_V2
 QuEST.TDC.COM.__init__|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\COM\__init__.py
+QuEST.TDC.My_TCP|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\My_TCP.py
+QuEST.TDC.ReaderThread|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\ReaderThread.py
+QuEST.TDC.Received_Processor|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\Received_Processor.py
+QuEST.TDC.Receiver_Thread|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\Receiver_Thread.py
+QuEST.TDC.Sender_Thread|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\Sender_Thread.py
+QuEST.TDC.SerailReader_Thread|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\SerailReader_Thread.py
 QuEST.TDC.SerialReader|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\SerialReader.py
 QuEST.TDC.TDC|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\TDC.py
+QuEST.TDC.TDC_CLIENT|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\TDC_CLIENT.py
 QuEST.TDC.UI.DisplayTimeUI|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\UI\DisplayTimeUI.py
+QuEST.TDC.UI.UIWidgets|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\UI\UIWidgets.py
 QuEST.TDC.UI.__init__|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\UI\__init__.py
 QuEST.TDC.__init__|C:\Users\jee11\workspace\QuantumTDC\QuEST\TDC\__init__.py
 QuEST.__init__|C:\Users\jee11\workspace\QuantumTDC\QuEST\__init__.py

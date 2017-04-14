@@ -1,0 +1,13 @@
+INSTUPjeeva.hello.test_server
+C:\Users\jee11\workspace\hello\jeeva\hello\test_server.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0
+send_lock=3
+server_send_processor=9
+server_receiver=8
+server_sender=7
+jeeva.hello.test_server=2
+server_receive=4
+receive_lock=5
+server_send=1
+server_socket=6
+server_receive_processor=10

@@ -1,5 +1,10 @@
 '''
 Created on Apr 12, 2017
+**************************
+
+deprecated--- s00n will be replaced and deleted
+
+
 
 @author: Quest10
 '''
