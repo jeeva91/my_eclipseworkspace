@@ -16,7 +16,7 @@ Operations:
 '''
 from serial import Serial
 class TDCReader(Serial):
-    def __init__(self,port,baudrate=38400):
+    def __init__(self,port="COM3",baudrate=38400):
         '''constructor
         '''
         Serial.__init__(self)

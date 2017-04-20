@@ -1,0 +1,20 @@
+'''
+Created on Apr 15, 2017
+
+@author: jee11
+'''
+
+class MyDataClass():
+    '''
+    classdocs
+    '''
+    _my_integer=1
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+    def my_integer(self):
+        return(self._my_integer)
+    
+        

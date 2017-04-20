@@ -1,0 +1,18 @@
+'''
+Created on Apr 14, 2017
+
+@author: jee11
+'''
+
+class MyClass(object):
+    '''
+    classdocs
+    '''
+    variable =1
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        
+        

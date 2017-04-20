@@ -6,6 +6,12 @@ Created on Mar 15, 2017
 from tkinter import *
 from QuEST.UI import UIWidgets
 from QuEST.UI import TDCFrames
+from queue import Queue
+from QuEST.COM import My_TCP
+from QuEST.COM import Receiver_Thread
+from QuEST.COM import Sender_Thread
+from QuEST.TDC import TDCReader
+from QuEST.TDC import TDCReaderThread
 
 class EncryptionUI(Tk):
     '''
@@ -13,14 +19,19 @@ class EncryptionUI(Tk):
     '''
 
 
-    def __init__(self):
+    def __init__(self,all_data):
         '''
         Constructor
         '''
         Tk.__init__(self)
+        self.all_data=all_data
         self.title("QuEST Encryption tool")
-        setting_frame=TDCFrames.SettingsFrame(self).pack(side=TOP)
-        console=TDCFrames.AllConsole(self).pack(side=BOTTOM)
+        #self.console=""
+        self.console=TDCFrames.AllConsole(self,self.all_data)
+        self.setting_frame=TDCFrames.SettingsFrame(self,self.all_data)
+        self.console.pack(side=BOTTOM)
+        self.setting_frame.pack(side=TOP)
+        
         
 if __name__ == '__main__':
     my_display=EncryptionUI()

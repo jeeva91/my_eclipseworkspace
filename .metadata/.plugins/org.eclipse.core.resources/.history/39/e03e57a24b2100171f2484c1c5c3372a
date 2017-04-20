@@ -1,0 +1,27 @@
+'''
+Created on Apr 14, 2017
+
+@author: jee11
+'''
+
+class MyClass(object):
+    '''
+    classdocs
+    '''
+    variable =1
+
+    def __init__(self, params):
+        '''
+        Constructor
+        '''
+        obj=ObjectClass(variable)
+        
+
+class ObjectClass():
+    
+    def __init__(self, variable):
+        self.variable = variable
+        self.method()
+        
+    def method(self):
+        self.varialbe=2

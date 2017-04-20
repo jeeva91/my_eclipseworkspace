@@ -1,13 +1,1 @@
-INSTUPQuEST.COM.Sender_Thread
-C:\Users\jee11\workspace\QuantumTDC\QuEST\COM\Sender_Thread.py
-INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&3|8|2|5&&2|9|2|1&&2|10|2|1
-send_socket=6
-Sender_Thread.__init__=5
-Sender_Thread=1
-sender_switch=4
-tosend=7
-lock=8
-run=9
-__init__=3
-send=10
-QuEST.COM.Sender_Thread=2
+DELSTRQuEST.UI.UIWidgets

@@ -1,0 +1,24 @@
+'''
+Created on Apr 19, 2017
+
+@author: jee11
+'''
+from queue import Queue
+from _overlapped import NULL
+from QuEST.TDC.TDCReaderThread import TDCReaderThread
+
+class EncrptorData(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self):
+        '''
+        Constructor
+        '''
+        self.ut, self.good_ut, received_data, send_data=Queue(0)
+        self.encrypt_socket=""
+        self.tdc_serial=""
+        self.tdc_reader=TDCReaderThread(self.ut, self.good_ut, self.tdc_serial)
+        

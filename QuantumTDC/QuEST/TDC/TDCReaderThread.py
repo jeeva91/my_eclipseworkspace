@@ -27,7 +27,7 @@ class TDCReaderThread(Thread):
         
     def start_reading(self):
         while(self.tdc_switch=="True"):
-            data=self.tdc_reader.read_line()
+            data=self.tdc_reader.readline()
             print(data)
             self.time_queue.put(data)
             self.send_queue.put(data)

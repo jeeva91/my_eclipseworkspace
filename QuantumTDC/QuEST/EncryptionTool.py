@@ -6,7 +6,8 @@ Created on Apr 13, 2017
 
 
 from QuEST.UI.EncryptionUI import EncryptionUI
-
-ui=EncryptionUI()
+from QuEST import EncryptorData
+all_data=EncryptorData.EncrptorData()
+ui=EncryptionUI(all_data)
 ui.mainloop()
 
